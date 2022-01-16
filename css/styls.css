@@ -1,0 +1,270 @@
+            body {
+                color: #40514E;
+                margin: 0;
+                text-align: left;
+                overflow: hidden;
+                color: black;
+                font-family: 'cursive'', serif;
+
+                /*  font-family: 'Merriweather', serif*/
+            }
+            
+            html {
+                scroll-behavior: smooth;
+                overflow: auto;
+                transition: filter 0.5s ease-in-out;
+            }
+            
+            img {
+                transition: filter 0.5s ease-in-out;
+            }
+            
+            p {
+                font-family: "basis-regular", sans-serif;
+            }
+            
+            .vl {
+                border-left: 4px solid white;
+                height: 20px;
+            }
+            /*body {
+	position: relative;
+}
+*/
+            
+            .bg-mov {
+                background: #3a538e;
+                width: 100%;
+                height: 100%;
+            }
+            
+            nav.navbar.navbar-light button:hover,
+            nav.navbar.navbar-light button:focus,
+            nav.navbar.navbar-light .nav-link:hover {
+                color: #3a538e;
+            }
+            
+            .navbar-light .nav-item {
+                margin-bottom: 10px;
+            }
+            
+            .nav-link {
+                line-height: 0.8;
+                font-size: 1.5em;
+                margin: 10px;
+                display: inline;
+            }
+            
+            .nav-link:hover {
+                text-decoration: none;
+                border-bottom: 5px solid #3a538e;
+            }
+            
+            .navbar {
+                transition: all 1s;
+                background: rgb(255, 255, 255, 0.94);
+            }
+            /* Change navbar styling on scroll */
+            
+            .navbar.active {
+                background-image: linear-gradient(45deg, #3a538e, transparent);
+                box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1);
+            }
+            
+            .navbar.active .nav-link {
+                color: #555;
+            }
+            
+            .navbar.active .nav-link:hover,
+            .navbar.active .nav-link:focus {
+                color: rgb(68, 66, 66);
+                text-decoration: none;
+            }
+            
+            .navbar.active .navbar-brand {
+                color: #555;
+            }
+            
+            .img_person {
+                border-radius: 50%;
+            }
+            
+            .contect_person:hover {
+                text-decoration: none;
+            }
+            
+            hr {
+                border: dotted #66BFBF 6px;
+                border-bottom: none;
+                width: 4%;
+                margin: 70px auto;
+            }
+            
+            .bottom-container {
+                background-color: #3a538e;
+                padding: 50px 0 20px;
+                text-align: center;
+            }
+            
+            .copyright {
+                color: #EAF6F6;
+                font-size: 0.75rem;
+                padding: 20px 0;
+            }
+            
+            .footer-link {
+                color: #66BFBF;
+                font-family: 'Montserrat', sans-serif;
+                margin: 10px 20px;
+                text-decoration: none;
+            }
+            
+            .bottom-container a:hover {
+                color: #ffffff;
+            }
+            
+            .dark_mode,
+            .button-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 100;
+                width: 60px;
+                height: 60px;
+                border: 0;
+                border-radius: 50%;
+                box-shadow: none;
+                background: #66BFBF;
+                color: #fff;
+                font-size: 26px;
+                line-height: 20px;
+                text-align: center;
+                cursor: pointer;
+            }
+            
+            .button-top {
+                bottom: 20px;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity .18s ease;
+            }
+            
+            button:focus {
+                outline: none;
+            }
+            
+            .dark_mode {
+                bottom: 90px;
+            }
+            
+            .button-top-visible {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1020;
+            }
+            
+             ::selection {
+                color: #ffffff;
+                background: #66BFBF;
+            }
+            
+            address {
+                font-style: italic;
+                color: #000000;
+            }
+            
+            address a,
+            a:hover {
+                color: #000000;
+            }
+            
+            .bg-head {
+                background-image: linear-gradient(45deg, #3a538e, transparent);
+            }
+            
+            .day:before {
+                content: '🌞'
+            }
+            
+            .night:before {
+                content: '🌙'
+            }
+            
+            .dark,
+            .dark img {
+                filter: invert(100%);
+            }
+            
+            @media only screen and (max-width: 1024px) {
+                .person_data {
+                    margin-left: 20px !important;
+                }
+                .dark_mode,
+                .button-top {
+                    width: 50px;
+                    height: 50px;
+                }
+                .dark_mode {
+                    font-size: 23px;
+                    bottom: 77px;
+                }
+            }
+            
+            @media only screen and (max-width: 720px) {
+                .h2,
+                h2 {
+                    font-size: 1.50rem !important;
+                }
+                h3,
+                h3 {
+                    font-size: 1.15rem !important;
+                }
+                .person_data {
+                    margin-left: 20px !important;
+                }
+                .dark_mode,
+                .button-top {
+                    width: 45px;
+                    height: 45px;
+                }
+                .dark_mode {
+                    font-size: 22px;
+                    bottom: 70px;
+                }
+            }
+            /* Change navbar styling on small viewports */
+            /*
+            @media (max-width: 991.98px) {
+                .navbar {
+                    background: rgb(19, 15, 15);
+                }
+                .navbar .navbar-brand,
+                .navbar .nav-link {
+                    color: #555;
+                }
+            }
+            
+            
+            @media (prefers-color-scheme: dark) {
+                html {
+                    filter: invert(100%);
+                }
+                img {
+                    filter: invert(100%);
+                }
+            }
+            
+            html {
+                filter: invert(100%);
+            }
+            
+            img {
+                filter: invert(100%);
+            }
+            */
