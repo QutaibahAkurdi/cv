@@ -2,7 +2,7 @@ AOS.init();
 var sticky = navbar.offsetTop;
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 30) {
+    if ($(this).scrollTop() > 50) {
         $('#navbar').addClass("sticky");
         $('.navbar').addClass('active');
     } else {
@@ -31,7 +31,7 @@ jQuery(function($) {
     });
 
     $window.on('scroll', function() {
-        if ($window.scrollTop() > 100) {
+        if ($window.scrollTop() > 300) {
             $buttonTop.addClass('button-top-visible');
 
         } else {
