@@ -2,7 +2,7 @@ AOS.init();
 var sticky = navbar.offsetTop;
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 50) {
+    if ($(this).scrollTop() > 90) {
         $('#navbar').addClass("sticky");
         $('.navbar').addClass('active');
     } else {
