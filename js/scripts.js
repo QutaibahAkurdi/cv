@@ -60,3 +60,6 @@ if (
 } else {
     document.documentElement.classList.remove("dark");
 }
+$('.carousel').carousel({
+    interval: 1500
+})

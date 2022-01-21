@@ -201,6 +201,21 @@
                 filter: invert(100%);
             }
             
+            .carousel-item p {
+                font-size: 0.9rem;
+                line-height: 1.1em;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'GT America Expanded';
+                font-weight: 900;
+                font-style: italic;
+            }
+            
+            .carouselcol {
+                min-width: 150px;
+                max-height: 40px;
+            }
+            
             @media only screen and (max-width: 1024px) {
                 .person_data {
                     margin-left: 20px !important;
@@ -236,6 +251,18 @@
                 .dark_mode {
                     font-size: 22px;
                     bottom: 70px;
+                }
+            }
+            
+            @media only screen and (max-width: 482px) {
+                .carouselcol {
+                    order: 3;
+                }
+            }
+            
+            @media only screen and (max-width: 340px) {
+                .carouselcol {
+                    display: none;
                 }
             }
             /* Change navbar styling on small viewports */
