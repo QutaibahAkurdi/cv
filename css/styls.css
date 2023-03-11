@@ -215,6 +215,19 @@
                 max-height: 40px;
             }
             
+            .course-list,
+            .language-list {
+                margin: 0;
+            }
+            
+            .course-list li,
+            .language-list li {
+                margin: 0.5rem 0;
+                font-size: 1.75rem;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+            
             @media only screen and (max-width: 1024px) {
                 .person_data {
                     margin-left: 20px !important;
@@ -238,6 +251,10 @@
                 h3,
                 h3 {
                     font-size: 1.15rem !important;
+                }
+                .course-list li,
+                .language-list li {
+                    font-size: 1.15rem;
                 }
                 .person_data {
                     margin-left: 20px !important;
