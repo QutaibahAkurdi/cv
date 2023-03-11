@@ -173,12 +173,12 @@
                 background: #66BFBF;
             }
             
-            address {
+            .profile-text {
                 font-style: italic;
                 color: #000000;
             }
             
-            address a,
+            .profile-text a,
             a:hover {
                 color: #000000;
             }
