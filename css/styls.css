@@ -228,7 +228,7 @@
             .dark img {
                 filter: invert(100%);
             }
-            
+
             .dark .navbar {
                 background: #000;
             }
@@ -255,6 +255,9 @@
             
             .dark .navbar.active .navbar-brand {
                 color: #fff;
+            }
+            .dark .navbar-toggler {
+                background-color: #dee2e6;
             }
             
             .dark .bottom-container {
