@@ -195,11 +195,7 @@
                 content: '🌙'
             }
             
-            .dark,
-            .dark img {
-                filter: invert(100%);
-            }
-            
+          
             .carousel-item p {
                 font-size: 0.9rem;
                 line-height: 1.1em;
@@ -226,6 +222,73 @@
                 font-size: 1.75rem;
                 font-weight: 500;
                 line-height: 1.2;
+            }
+            /* dark */
+            .dark,
+            .dark img {
+                filter: invert(100%);
+            }
+            
+            .dark .navbar {
+                background: #000;
+            }
+            
+            .dark .navbar.active {
+                background-image: linear-gradient(45deg, #faf8f8, transparent);
+                box-shadow: 2px 3px 15px rgba(255, 255, 255, 0.1);
+            }
+            .dark .navbar-light .navbar-nav .nav-link {
+                color: #fff;
+            }
+            
+            .dark .navbar.active .nav-link {
+                color: #fff;
+            }
+            .dark .nav-link {
+                color: #000;
+            }
+            
+            .dark .navbar.active .nav-link:hover,
+            .dark .navbar.active .nav-link:focus {
+                color: #ddd;
+            }
+            
+            .dark .navbar.active .navbar-brand {
+                color: #fff;
+            }
+            
+            .dark .bottom-container {
+                background-color: #000;
+            }
+            .dark .bg-mov{
+                background-color: #000;
+            }
+             .dark .bg-head {
+                background-image: linear-gradient(45deg, #000, transparent);
+            }
+            
+            .dark .bottom-container a:hover {
+                color: #ecae6f;
+            }
+            
+            .dark .footer-link {
+                color: #fff;
+            }
+            
+            
+            .dark .carouselcol {
+                background-color: #000;
+            }
+            
+            .dark .carouselcol h4 {
+                color: #fff;
+            }
+            
+            .dark .carousel-item p {
+                color: #fff;
+            }
+            .dark p {
+                font-size: 18px;
             }
             
             @media only screen and (max-width: 1024px) {
