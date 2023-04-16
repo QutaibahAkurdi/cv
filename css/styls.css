@@ -1,9 +1,8 @@
             body {
-                color: #40514E;
+                color: #000000;
                 margin: 0;
                 text-align: left;
                 overflow: hidden;
-                color: black;
                 font-family: arial, sans-serif;
                 /*  font-family: 'Merriweather', serif*/
             }
@@ -26,10 +25,7 @@
                 border-left: 4px solid #66BFBF;
                 height: 20px;
             }
-            /*body {
-	position: relative;
-}
-*/
+          
             
             .bg-mov {
                 background: #3a538e;
@@ -83,6 +79,39 @@
             .navbar.active .navbar-brand {
                 color: #555;
             }
+            .heading1 {
+                font-size: 36px !important;
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 20px;
+                padding-top: 0;
+                padding-bottom: 0;
+                display: block;
+              }
+              
+              /* Style for heading2 */
+              .heading2 {
+                font-size: 24px !important;
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 10px;
+                padding-top: 0;
+                padding-bottom: 0;
+                display: block;
+              }
+              
+              /* Style for heading3 */
+              .heading3 {
+                font-size: 1.75rem !important;    
+                font-weight: 500;
+                line-height: 1.2;
+                font-weight: 500;
+                margin-top: 0;
+                margin-bottom: 12px;
+                padding-top: 0;
+                padding-bottom: 0;
+                display: block;
+              }
             
             .img_person {
                 border-radius: 50%;
@@ -314,7 +343,7 @@
                 h2 {
                     font-size: 1.50rem !important;
                 }
-                h3,
+                .heading3, h3,
                 h3 {
                     font-size: 1.15rem !important;
                 }
