@@ -3,8 +3,8 @@
                 margin: 0;
                 text-align: left;
                 overflow: hidden;
-                font-family: arial, sans-serif;
-                /*  font-family: 'Merriweather', serif*/
+                font-family: "Roboto", sans-serif;
+                /*  font-family: 'Merriweather', serif */
             }
             
             html {
@@ -16,11 +16,11 @@
             img {
                 transition: filter 0.5s ease-in-out;
             }
-            
+            /*
             p {
                 font-family: "basis-regular", sans-serif;
             }
-            
+            */
             .vl {
                 border-left: 4px solid #66BFBF;
                 height: 20px;
