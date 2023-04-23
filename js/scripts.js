@@ -5,9 +5,11 @@ $(window).scroll(function() {
     if ($(this).scrollTop() > 90) {
         $('#navbar').addClass("sticky");
         $('.navbar').addClass('active');
+        $('.profile').addClass('header-three');
     } else {
         $('#navbar').removeClass("sticky");
         $('.navbar').removeClass('active');
+        $('.profile').removeClass('header-three');
     }
 });
 

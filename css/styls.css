@@ -26,7 +26,6 @@
                 height: 20px;
             }
           
-            
             .bg-mov {
                 background: #3a538e;
                 width: 100%;
@@ -57,7 +56,7 @@
             
             .navbar {
                 transition: all 1s;
-                background: rgb(255, 255, 255, 0.94);
+                background: rgba(255, 255, 255, 0.808);
             }
             /* Change navbar styling on scroll */
             
@@ -79,6 +78,7 @@
             .navbar.active .navbar-brand {
                 color: #555;
             }
+
             .heading1 {
                 font-size: 36px !important;
                 font-weight: bold;
@@ -119,6 +119,29 @@
             
             .contect_person:hover {
                 text-decoration: none;
+            }
+
+            .header-three{
+                top: 85px;
+                position: relative;
+                margin-bottom: 85px;
+             }
+
+            .parallax-background {
+                background-image: url('../imge/webentwickler.png');
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+              }
+
+              .profile-content {
+                position: relative;
+                z-index: 1; /* Set the z-index of the content higher than the background image */
+              }
+              .profile-text {
+                font-style: italic;
+                color: #000000;
             }
             
             hr {
@@ -196,15 +219,10 @@
                 width: 100%;
                 z-index: 1020;
             }
-            
+           
              ::selection {
                 color: #ffffff;
                 background: #66BFBF;
-            }
-            
-            .profile-text {
-                font-style: italic;
-                color: #000000;
             }
             
             .profile-text a,
@@ -224,7 +242,6 @@
                 content: '🌙'
             }
             
-          
             .carousel-item p {
                 font-size: 0.9rem;
                 line-height: 1.1em;
@@ -252,20 +269,23 @@
                 font-weight: 500;
                 line-height: 1.2;
             }
+
             /* dark */
             .dark,
             .dark img {
                 filter: invert(100%);
             }
-
+           
             .dark .navbar {
                 background: #000;
             }
             
             .dark .navbar.active {
+                background: rgba(10, 10, 10, 0.808);
                 background-image: linear-gradient(45deg, #faf8f8, transparent);
                 box-shadow: 2px 3px 15px rgba(255, 255, 255, 0.1);
             }
+
             .dark .navbar-light .navbar-nav .nav-link {
                 color: #fff;
             }
@@ -322,6 +342,22 @@
             .dark p {
                 font-size: 18px;
             }
+           .dark .profile-text, 
+           .dark .profile-text a
+            {
+                color: #ffffff;
+            }
+            .dark .profile {
+                filter: invert(100%);
+              }
+              .dark .profile img {
+                filter: invert(0%);
+              }
+
+
+            @media (prefers-color-scheme: dark) {
+                
+              }
             
             @media only screen and (max-width: 1024px) {
                 .person_data {
