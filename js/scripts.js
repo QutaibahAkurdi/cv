@@ -62,6 +62,37 @@ if (
 } else {
     document.documentElement.classList.remove("dark");
 }
-$('.carousel').carousel({
-    interval: 1500
-})
+
+// Robot Text Animation
+const texts = ["ict Engineer", "web developer", "software developer", "teacher"];
+let index = 0;
+let charIndex = 0;
+let typingTimeout;
+let deletingTimeout;
+let delay = 1500;
+
+function type() {
+    if (charIndex < texts[index].length) {
+        document.querySelector(".typing-text").textContent += texts[index].charAt(charIndex);
+        charIndex++;
+        typingTimeout = setTimeout(type, 50);
+    } else {
+        deletingTimeout = setTimeout(deleteText, delay);
+    }
+}
+function deleteText() {
+    if (charIndex >= 0) {
+        const text = texts[index].substring(0, charIndex);
+        document.querySelector(".typing-text").textContent = text;
+        charIndex--;
+        deletingTimeout = setTimeout(deleteText, 50);
+    } else {
+        index++;
+        if (index >= texts.length) {
+            index = 0;
+        }
+        typingTimeout = setTimeout(type, delay);
+    }
+}
+
+type();
